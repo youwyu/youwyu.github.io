@@ -1,221 +1,246 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
-        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Youwei Yu, robotics PhD student working on SLAM, autonomous navigation, and high-speed autonomous racing." />
+    <title>Youwei Yu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <title> Youwei Yu </title>
 </head>
 
 <body>
-    <div style="width:1000px;margin: 0px auto;">
-        <header id="header" width="400px" style="display:flex;justify-content: space-around;">
-            <a href="#profile-intro">Home</a>
-            <a href="#updates">Updates</a>
-            <a href="#research">Research</a>
-            <!-- <a href="#projects">Projects</a> -->
-        </header>
-        <div id="profile">
-            <div id="profile-pic">
-                <img src="assets/images/profile.jpg" style="width: 250px; height: auto;"/>
-                <p style="text-align:left;margin-top:-15px;"></p>
+    <header class="site-header">
+        <nav class="nav shell" aria-label="Primary navigation">
+            <a class="brand" href="#home">Youwei Yu</a>
+            <div class="nav-links">
+                <a href="#notes">Notes</a>
+                <a href="#updates">Updates</a>
+                <a href="#research">Research</a>
             </div>
-            <div id="profile-intro">
-                <div id="profile-name">Youwei Yu 于有为</div>
-                <div id="profile-email">youwyu at iu dot edu</div>
-                <p>
-                    I'm fascinated about navigation with scene reconstruction under SLAM.
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero shell" aria-labelledby="profile-name">
+            <div class="hero-copy" id="profile-intro">
+                <p class="eyebrow">Robotics &middot; SLAM &middot; Autonomous racing</p>
+                <h1 id="profile-name">Youwei Yu <span>于有为</span></h1>
+                <p class="lead">
+                    I study autonomous robotic navigation, with a focus on scene reconstruction,
+                    SLAM, and sim-to-real autonomy for fast and uneven terrain.
                 </p>
                 <p>
-                    I'm fortunate to be advised by Professor <a href="https://vail.sice.indiana.edu/pages/lantaoliu.html">Lantao Liu</a>.
-                    My research will focus on autonomous robotic navigation from sim to real.
+                    I am advised by Professor
+                    <a href="https://vail-robotics.net/pages/lantaoliu">Lantao Liu</a>
+                    at Indiana University. I also lead state estimation and LiDAR perception for
+                    autonomous racing.
                 </p>
-                <p>
-                    I'm the team lead for <a href="https://github.com/youwyu/kiss-icp">State Estimation</a> and LiDAR perception in the autonomous racing.
-                </p>
-                <div>
-                    <a href="https://scholar.google.com/citations?hl=en&user=Dhzwr0YAAAAJ&view_op=list_works&sortby=pubdate">
-                        Google Scholar
-                    </a>
-                    /
-                    <a href="https://www.linkedin.com/in/youwei-fisher/">
-                        LinkedIn
-                    </a>
-                    /
-                    <a href="https://github.com/youwyu">
-                        Github
-                    </a>
-                    /
-                    <a href="https://vail.sice.indiana.edu">
-                        VAIL
-                    </a>
-                    /
-                    <a href="https://www.zhihu.com/people/yu-you-wei-42/posts">
-                        Blog
-                    </a>
+                <div class="contact-line" aria-label="Email">youwyu at iu dot edu</div>
+                <ul class="profile-links" aria-label="Profile links">
+                    <li><a href="https://scholar.google.com/citations?hl=en&amp;user=Dhzwr0YAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Google Scholar</a></li>
+                    <li><a href="https://www.linkedin.com/in/youwei-fisher/">LinkedIn</a></li>
+                    <li><a href="https://github.com/youwyu">GitHub</a></li>
+                    <li><a href="https://vail-robotics.net">VAIL</a></li>
+                    <li><a href="https://www.zhihu.com/people/yu-you-wei-42/posts">Blog</a></li>
+                </ul>
+            </div>
+
+            <aside class="portrait-card" aria-label="Profile portrait">
+                <img src="assets/images/profile.jpg" alt="Portrait of Youwei Yu" />
+                <div class="portrait-caption">
+                    <span>Indiana University</span>
+                    <strong>VAIL Robotics</strong>
                 </div>
-            </div>
-            <div style="clear: both;"></div>
-        </div>
-        <div class="section" id="updates">
-            <h1>Learning Notes</h1>
-            <ul>
-                <li> <b>Dec 2025</b> <a href="assets/files/statistical_learning.pdf">Statistical Learning</a>.
-            </ul>
-            <p></p>
-            <div style="clear: both;"></div>
-        </div>
-        <div class="section" id="updates">
-            <h1>Updates</h1>
-            <ul>
-                <li> <b>June 2025</b> One paper accepted to <a href="https://off-roaders.github.io/off-road-workshop-2025/">RSS 2025 Workshop ROAR</a>.
-                <li> <b>May 2025</b> One paper accepted to <a href="https://iser2025.org/">International Symposium on Experimental Robotics (ISER) 2025</a>.
-                <li> <b>Jan 2025</b> <a href="https://news.luddy.indiana.edu/story.html?story=No-Limits-%E2%80%93-IU-Luddy-Autonomous-Race-Team-Keeps-Pushing-Boundaries">Story</a>: We pushed the race car to speeds up to nearly 130 mph at the Las Vegas Motor Speedway (LVMS) time trial.</a>
-                <li> <b>Sep 2024</b> One paper accepted to <a href="https://2024.corl.org/">Conference on Robot Learning (CoRL) 2024</a>.
-                <li> <b>Sep 2024</b> <a href="https://news.iu.edu/live/news/37910-luddy-school-race-car-debuts-with-strong-showing">Story</a>: Our AI-driven, 1,400-pound race car reached speeds up to nearly 130 mph at the <a href="https://www.indyautonomouschallenge.com/">Indy Autonomous Challenge.</a>
-                <li> <b>Aug 2023</b> I started my PhD at Indiana University, advised by Prof. <a href="https://vail.sice.indiana.edu/pages/lantaoliu.html">Lantao Liu</a>
-            </ul>
-            <p></p>
-            <div style="clear: both;"></div>
-        </div>
-        <div class="divider"></div>
-        <div style="display:flex;flex-direction: column;" id="research">
-            <h1>Research</h1>
+            </aside>
+        </section>
 
+        <section class="signal-strip shell" aria-label="Research focus">
             <div>
-                <a href="https://youwei-yu.com/adtg-sim-to-real/" style="height: 14em" class="research-thumb">
-                    <video width="320" height="auto" autoplay loop muted>
-                        <source src="assets/videos/rss2025roar/adept.mp4" type="video/mp4">
-                    </video>
-                </a>
-                <a href="https://youwei-yu.com/adtg-sim-to-real/" class="research-proj-title">
-                    ADEPT: Adaptive Diffusion Environment for Policy Transfer Sim-to-Real
-                </a>
-                <p>
-                    <b>Youwei Yu</b>,
-                    <a style="color:#000;" href="https://junhongxu.github.io">Junhong Xu</a>,
-                    <a style="color:#000;" href="https://vail.sice.indiana.edu/pages/lantaoliu.html">Lantao Liu</a>
-                    <br>RSS 2025 Workshop ROAR<br>
-                    <a href="https://youwei-yu.com/adtg-sim-to-real/">Website</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-                    <a href="https://arxiv.org/abs/2506.01759">ArXiv</a>
-                </p>
+                <span>Focus</span>
+                <strong>Navigation from reconstruction</strong>
             </div>
-
             <div>
-                <a style="height: 14em" class="research-thumb">
-                    <video width="320" height="auto" autoplay loop muted>
-                        <source src="assets/videos/race/LVRC.mp4" type="video/mp4">
-                    </video>
-                </a>
-                <a class="research-proj-title">
-                    From Zero to High-Speed Racing: An Autonomous Racing Stack
-                </a>
-                <p style="display: block; margin-bottom: 1em;">
-                    <a style="color:#000;">Hassan Jardali</a>,
-                    <a style="color:#000;">Durgakant Pushp</a>,
-                    <b>Youwei Yu</b>,
-                    <a style="color:#000;" href="https://sites.google.com/view/ali-mahmoudali/home">Mahmoud Ali</a>,
-                    <a style="color:#000;" href="https://sites.google.com/view/ihabsmohamed/">Ihab S. Mohamed</a>,
-                    <a style="color:#000;" href="https://alejandromllo.github.io/">Alejandro Murillo-González</a>,
-                    <a style="color:#000;" href="https://sites.google.com/view/khanmdal/home">Md. Al-Masrur Khan</a>,
-                    <a style="color:#000;" href="https://vail.sice.indiana.edu/pages/lantaoliu.html">Lantao Liu</a>
-                    <br>International Symposium on Experimental Robotics (ISER) 2025<br>
-                    <a href="https://www.arxiv.org/abs/2512.06892">ArXiv</a>
-                </p>
-                <a class="research-proj-title">
-                    Minimalistic Autonomous Stack for High-Speed Time-Trial Racing
-                </a>
-                <p>
-                    <a style="color:#000;" href="https://sites.google.com/view/ali-mahmoudali/home">Mahmoud Ali</a>,
-                    <a style="color:#000;">Hassan Jardali</a>,
-                    <b>Youwei Yu</b>,
-                    <a style="color:#000;">Durgakant Pushp</a>,
-                    <a style="color:#000;" href="https://vail.sice.indiana.edu/pages/lantaoliu.html">Lantao Liu</a>
-                </p>
+                <span>Systems</span>
+                <strong>LiDAR, SLAM, racing autonomy</strong>
+            </div>
+            <div>
+                <span>Theme</span>
+                <strong>Simulation that transfers</strong>
+            </div>
+        </section>
+
+        <section class="section shell notes-section" id="notes" aria-labelledby="notes-title">
+            <div class="section-heading">
+                <p class="eyebrow">Learning notes</p>
+                <h2 id="notes-title">Notes</h2>
+            </div>
+            <a class="note-link" href="assets/files/statistical_learning.pdf">
+                <span>Dec 2025</span>
+                <strong>Statistical Learning</strong>
+            </a>
+        </section>
+
+        <section class="section shell" id="updates" aria-labelledby="updates-title">
+            <div class="section-heading">
+                <p class="eyebrow">What is new</p>
+                <h2 id="updates-title">Updates</h2>
+            </div>
+            <ol class="timeline">
+                <li>
+                    <time datetime="2025-06">June 2025</time>
+                    <p>One paper accepted to <a href="https://off-roaders.github.io/off-road-workshop-2025/">RSS 2025 Workshop ROAR</a>.</p>
+                </li>
+                <li>
+                    <time datetime="2025-05">May 2025</time>
+                    <p>One paper accepted to <a href="https://iser2025.org/">International Symposium on Experimental Robotics (ISER) 2025</a>.</p>
+                </li>
+                <li>
+                    <time datetime="2025-01">Jan 2025</time>
+                    <p>
+                        <a href="https://news.luddy.indiana.edu/story.html?story=No-Limits-%E2%80%93-IU-Luddy-Autonomous-Race-Team-Keeps-Pushing-Boundaries">Story</a>:
+                        We pushed the race car to speeds up to nearly 130 mph at the Las Vegas Motor Speedway time trial.
+                    </p>
+                </li>
+                <li>
+                    <time datetime="2024-09">Sep 2024</time>
+                    <p>One paper accepted to <a href="https://2024.corl.org/">Conference on Robot Learning (CoRL) 2024</a>.</p>
+                </li>
+                <li>
+                    <time datetime="2024-09">Sep 2024</time>
+                    <p>
+                        <a href="https://news.iu.edu/live/news/37910-luddy-school-race-car-debuts-with-strong-showing">Story</a>:
+                        Our AI-driven, 1,400-pound race car reached speeds up to nearly 130 mph at the
+                        <a href="https://www.indyautonomouschallenge.com/">Indy Autonomous Challenge</a>.
+                    </p>
+                </li>
+                <li>
+                    <time datetime="2023-08">Aug 2023</time>
+                    <p>I started my PhD at Indiana University, advised by Prof. <a href="https://vail-robotics.net/pages/lantaoliu">Lantao Liu</a>.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section class="section shell" id="research" aria-labelledby="research-title">
+            <div class="section-heading">
+                <p class="eyebrow">Selected work</p>
+                <h2 id="research-title">Research</h2>
             </div>
 
-            <div>
-                <a href="https://youwei-yu.com/adtg-sim-to-real/" style="height: 14em" class="research-thumb">
-                    <video width="320" height="auto" autoplay loop muted>
-                        <source src="https://media.githubusercontent.com/media/youwyu/adtg-sim-to-real/main/static/videos/terrains_animation_3d.mp4" type="video/mp4">
-                    </video>
-                </a>
-                <a href="https://youwei-yu.com/adtg-sim-to-real/" class="research-proj-title">
-                    Adaptive Diffusion Terrain Generator for Autonomous Uneven Terrain Navigation
-                </a>
-                <p>
-                    <b>Youwei Yu</b><sup>&dagger;</sup>,
-                    <a style="color:#000;" href="https://junhongxu.github.io">Junhong Xu</a><sup>&dagger;</sup>,
-                    <a style="color:#000;" href="https://vail.sice.indiana.edu/pages/lantaoliu.html">Lantao Liu</a>
-                    <br>Conference on Robot Learning (CoRL) 2024<br>
-                    <a href="https://youwei-yu.com/adtg-sim-to-real/">Website</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-                    <a href="https://arxiv.org/abs/2410.10766v1">ArXiv</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-                    <a href="https://www.linkedin.com/posts/youwei-fisher_we-are-excited-to-announce-that-our-paper-activity-7238569244383191040-IIBM?utm_source=share&utm_medium=member_desktop">LinkedIn</a>
-                </p>
-            </div>
-            
-            <div>
-                <a class="research-thumb">
-                    <img src="assets/images/mimu/leadsense.png" alt="">
-                </a>
-                <a href="https://ieeexplore.ieee.org/abstract/document/10161187" class="research-proj-title">
-                    Fast Extrinsic Calibration for Multiple Inertial Measurement Units in Visual-Inertial System
-                </a>
-                <p>
-                    <b>Youwei Yu</b>,
-                    <a style="color:#000;">Yanqing Liu</a>,
-                    <a style="color:#000;">Fengjie Fu</a>,
-                    <a style="color:#000;">Sihan He</a>,
-                    <a style="color:#000;">Dongchen Zhu</a>,
-                    <a style="color:#000;">Lei Wang</a>,
-                    <a style="color:#000;">Xiaolin Zhang</a>,
-                    <a style="color:#000;">Jiamao Li</a>
-                    <br>IEEE International Conference on Robotics and Automation (ICRA) 2023<br>
-                    <a href="https://ieeexplore.ieee.org/abstract/document/10161187">IEEE ICRA</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-                    <a href="https://arxiv.org/abs/2409.16228">ArXiv</a>
-                </p>
-            </div>
+            <div class="project-list">
+                <article class="project">
+                    <a class="project-media" href="https://youwei-yu.com/adtg-sim-to-real/" aria-label="ADEPT project website">
+                        <video autoplay loop muted playsinline preload="metadata">
+                            <source src="assets/videos/rss2025roar/adept.mp4" type="video/mp4">
+                        </video>
+                    </a>
+                    <div class="project-copy">
+                        <p class="venue">RSS 2025 Workshop ROAR</p>
+                        <h3><a href="https://youwei-yu.com/adtg-sim-to-real/">ADEPT: Adaptive Diffusion Environment for Policy Transfer Sim-to-Real</a></h3>
+                        <p class="authors">
+                            <strong>Youwei Yu</strong>,
+                            <a href="https://junhongxu.github.io">Junhong Xu</a>,
+                            <a href="https://vail-robotics.net/pages/lantaoliu">Lantao Liu</a>
+                        </p>
+                        <p class="paper-links">
+                            <a href="https://youwei-yu.com/adtg-sim-to-real/">Website</a>
+                            <a href="https://arxiv.org/abs/2506.01759">ArXiv</a>
+                        </p>
+                    </div>
+                </article>
 
-            <!-- <div>
-                <p>* indicates equal contribution</p>
-            </div> -->
+                <article class="project">
+                    <div class="project-media" role="img" aria-label="Autonomous racing video">
+                        <video autoplay loop muted playsinline preload="metadata">
+                            <source src="assets/videos/race/LVRC.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="project-copy">
+                        <p class="venue">ISER 2025</p>
+                        <h3>From Zero to High-Speed Racing: An Autonomous Racing Stack</h3>
+                        <p class="authors">
+                            <span>Hassan Jardali</span>,
+                            <span>Durgakant Pushp</span>,
+                            <strong>Youwei Yu</strong>,
+                            <a href="https://sites.google.com/view/ali-mahmoudali/home">Mahmoud Ali</a>,
+                            <a href="https://sites.google.com/view/ihabsmohamed/">Ihab S. Mohamed</a>,
+                            <a href="https://alejandromllo.github.io/">Alejandro Murillo-González</a>,
+                            <a href="https://sites.google.com/view/khanmdal/home">Md. Al-Masrur Khan</a>,
+                            <a href="https://vail-robotics.net/pages/lantaoliu">Lantao Liu</a>
+                        </p>
+                        <p class="paper-links">
+                            <a href="https://www.arxiv.org/abs/2512.06892">ArXiv</a>
+                        </p>
+                        <div class="companion-work">
+                            <p class="venue">Autonomous racing</p>
+                            <h3>Minimalistic Autonomous Stack for High-Speed Time-Trial Racing</h3>
+                            <p class="authors">
+                                <a href="https://sites.google.com/view/ali-mahmoudali/home">Mahmoud Ali</a>,
+                                <span>Hassan Jardali</span>,
+                                <strong>Youwei Yu</strong>,
+                                <span>Durgakant Pushp</span>,
+                                <a href="https://vail-robotics.net/pages/lantaoliu">Lantao Liu</a>
+                            </p>
+                        </div>
+                    </div>
+                </article>
 
-            <div style="clear: both;"></div>
-        </div>
-        <!-- <div class="divider"></div>
-        <div style="display:flex;flex-direction: column;">
-            <h1>Projects</h1>
-            <div>
-                <a href="soft-creatures/index.html" class="research-thumb"><img
-                        src="soft-creatures/gifs/elizabeth-hickey-small.gif" alt=""></a>
-                <a href="soft-creatures/index.html" class="research-proj-title">Coevolution of Morphology and Policy
-                    Implicit Neural Functions</a>
-                <p>
-                    <b>Huy Ha</b><br>
-                    <a href="https://github.com/huy-ha/coevolving-neural-networks">Github</a>,
-                    <a href="soft-creatures/index.html">Website</a>
-                </p>
+                <article class="project">
+                    <a class="project-media" href="https://youwei-yu.com/adtg-sim-to-real/" aria-label="Adaptive diffusion terrain generator project website">
+                        <video autoplay loop muted playsinline preload="metadata">
+                            <source src="https://media.githubusercontent.com/media/youwyu/adtg-sim-to-real/main/static/videos/terrains_animation_3d.mp4" type="video/mp4">
+                        </video>
+                    </a>
+                    <div class="project-copy">
+                        <p class="venue">CoRL 2024</p>
+                        <h3><a href="https://youwei-yu.com/adtg-sim-to-real/">Adaptive Diffusion Terrain Generator for Autonomous Uneven Terrain Navigation</a></h3>
+                        <p class="authors">
+                            <strong>Youwei Yu<sup>&dagger;</sup></strong>,
+                            <a href="https://junhongxu.github.io">Junhong Xu<sup>&dagger;</sup></a>,
+                            <a href="https://vail-robotics.net/pages/lantaoliu">Lantao Liu</a>
+                        </p>
+                        <p class="paper-links">
+                            <a href="https://youwei-yu.com/adtg-sim-to-real/">Website</a>
+                            <a href="https://arxiv.org/abs/2410.10766v1">ArXiv</a>
+                            <a href="https://www.linkedin.com/posts/youwei-fisher_we-are-excited-to-announce-that-our-paper-activity-7238569244383191040-IIBM?utm_source=share&amp;utm_medium=member_desktop">LinkedIn</a>
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <a class="project-media" href="https://ieeexplore.ieee.org/abstract/document/10161187" aria-label="MIMU calibration paper">
+                        <img src="assets/images/mimu/leadsense.png" alt="Diagram of multiple IMU extrinsic calibration" />
+                    </a>
+                    <div class="project-copy">
+                        <p class="venue">ICRA 2023</p>
+                        <h3><a href="https://ieeexplore.ieee.org/abstract/document/10161187">Fast Extrinsic Calibration for Multiple Inertial Measurement Units in Visual-Inertial System</a></h3>
+                        <p class="authors">
+                            <strong>Youwei Yu</strong>,
+                            <span>Yanqing Liu</span>,
+                            <span>Fengjie Fu</span>,
+                            <span>Sihan He</span>,
+                            <span>Dongchen Zhu</span>,
+                            <span>Lei Wang</span>,
+                            <span>Xiaolin Zhang</span>,
+                            <span>Jiamao Li</span>
+                        </p>
+                        <p class="paper-links">
+                            <a href="https://ieeexplore.ieee.org/abstract/document/10161187">IEEE ICRA</a>
+                            <a href="https://arxiv.org/abs/2409.16228">ArXiv</a>
+                        </p>
+                    </div>
+                </article>
             </div>
-            <div style="clear: both;"></div>
-        </div> -->
-    </div>
-    <!-- <script src="js/pixi.min.js"></script> -->
-    <!-- <script src="js/profile-pic.js"></script> -->
-    <div class="wrapper">
-        <div id="misc" class="bio">
-          <div class="bio-body" style="overflow:hidden;">
-            <table style="width:100%;max-width:150px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody><tr>
-                <td style="width:100%; vertical-align:middle; text-align:center;"><p>
-                    <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=Kr3JHIfobUwIgjI4JxqkPRYD_sy2RNiE17Mo4HRNhF0"></script>
-                </a></p></td>
-              </tr></tbody>
-            </table>
-          </div>
-        </div>
-      </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer shell">
+        <p>&copy; Youwei Yu. Built for robots, racing, and rough terrain.</p>
+    </footer>
 </body>
 
 </html>
