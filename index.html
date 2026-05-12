@@ -9,6 +9,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <script>
+        (function () {
+            try {
+                var savedTheme = localStorage.getItem("theme");
+                document.documentElement.dataset.theme = savedTheme === "dark" ? "dark" : "bright";
+            } catch (error) {
+                document.documentElement.dataset.theme = "bright";
+            }
+        })();
+    </script>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 </head>
 
@@ -16,10 +26,29 @@
     <header class="site-header">
         <nav class="nav shell" aria-label="Primary navigation">
             <a class="brand" href="#home">Youwei Yu</a>
-            <div class="nav-links">
-                <a href="#notes">Notes</a>
-                <a href="#updates">Updates</a>
-                <a href="#research">Research</a>
+            <div class="nav-actions">
+                <div class="nav-links">
+                    <a href="#notes">Notes</a>
+                    <a href="#updates">Updates</a>
+                    <a href="#research">Research</a>
+                </div>
+                <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode">
+                    <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2"></path>
+                        <path d="M12 20v2"></path>
+                        <path d="m4.93 4.93 1.41 1.41"></path>
+                        <path d="m17.66 17.66 1.41 1.41"></path>
+                        <path d="M2 12h2"></path>
+                        <path d="M20 12h2"></path>
+                        <path d="m6.34 17.66-1.41 1.41"></path>
+                        <path d="m19.07 4.93-1.41 1.41"></path>
+                    </svg>
+                    <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5 7 7 0 1 0 20.5 14.5z"></path>
+                    </svg>
+                    <span class="visually-hidden" data-theme-toggle-label>Switch to dark mode</span>
+                </button>
             </div>
         </nav>
     </header>
@@ -56,21 +85,6 @@
                     <strong>VAIL Robotics</strong>
                 </div>
             </aside>
-        </section>
-
-        <section class="signal-strip shell" aria-label="Research focus">
-            <div>
-                <span>Focus</span>
-                <strong>Navigation from reconstruction</strong>
-            </div>
-            <div>
-                <span>Systems</span>
-                <strong>LiDAR, SLAM, racing autonomy</strong>
-            </div>
-            <div>
-                <span>Theme</span>
-                <strong>Simulation that transfers</strong>
-            </div>
         </section>
 
         <section class="section shell notes-section" id="notes" aria-labelledby="notes-title">
@@ -272,6 +286,43 @@
             <a class="visitor-globe-link" href="https://clustrmaps.com/site/1c1gz" aria-label="Open visitor map" title="Open visitor map"></a>
         </div>
     </footer>
+    <script>
+        (function () {
+            var root = document.documentElement;
+            var toggle = document.querySelector("[data-theme-toggle]");
+            var label = document.querySelector("[data-theme-toggle-label]");
+
+            if (!toggle) {
+                return;
+            }
+
+            function setTheme(theme) {
+                var isDark = theme === "dark";
+                var nextLabel = isDark ? "Switch to bright mode" : "Switch to dark mode";
+
+                root.dataset.theme = isDark ? "dark" : "bright";
+                toggle.setAttribute("aria-label", nextLabel);
+                toggle.setAttribute("aria-pressed", String(isDark));
+                toggle.setAttribute("title", nextLabel);
+
+                if (label) {
+                    label.textContent = nextLabel;
+                }
+
+                try {
+                    localStorage.setItem("theme", root.dataset.theme);
+                } catch (error) {
+                    return;
+                }
+            }
+
+            setTheme(root.dataset.theme === "dark" ? "dark" : "bright");
+
+            toggle.addEventListener("click", function () {
+                setTheme(root.dataset.theme === "dark" ? "bright" : "dark");
+            });
+        })();
+    </script>
 </body>
 
 </html>
