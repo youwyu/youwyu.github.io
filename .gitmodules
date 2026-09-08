@@ -4,3 +4,6 @@
 [submodule "qoed"]
 	path = qoed
 	url = https://github.com/youwyu/Quasi-Optimal-Experimental-Design
+[submodule "nfc"]
+	path = nfc
+	url = https://github.com/youwyu/Neural-Fidelity-Calibration
