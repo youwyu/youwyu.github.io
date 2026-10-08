@@ -388,6 +388,15 @@ h3 {
     letter-spacing: 0.02em;
 }
 
+.venue a {
+    color: inherit;
+}
+
+.venue a:hover,
+.venue a:focus-visible {
+    color: var(--link-hover);
+}
+
 .project h3 a {
     color: var(--ink);
 }
