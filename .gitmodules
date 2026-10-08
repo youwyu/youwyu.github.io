@@ -3,7 +3,8 @@
 	url = git@github.com:youwyu/adtg-sim-to-real.git
 [submodule "qoed"]
 	path = qoed
-	url = https://github.com/youwyu/Quasi-Optimal-Experimental-Design
+	url = https://github.com/youwyu/QOED
+	branch = gh-pages
 [submodule "nfc"]
 	path = nfc
 	url = https://github.com/youwyu/Neural-Fidelity-Calibration
