@@ -1,6 +1,7 @@
 [submodule "adtg-sim-to-real"]
 	path = adtg-sim-to-real
-	url = git@github.com:youwyu/adtg-sim-to-real.git
+	url = https://github.com/youwyu/Adaptive-Diffusion-Terrain
+	branch = gh-pages
 [submodule "qoed"]
 	path = qoed
 	url = https://github.com/youwyu/QOED
