@@ -9,3 +9,7 @@
 [submodule "nfc"]
 	path = nfc
 	url = https://github.com/youwyu/Neural-Fidelity-Calibration
+[submodule "fosa"]
+	path = fosa
+	url = https://github.com/youwyu/fosa
+	branch = gh-pages
